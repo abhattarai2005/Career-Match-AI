@@ -47,3 +47,4 @@ Your uploaded resume stays in your local Streamlit session for matching and is *
 ## Attribution
 
 Remote job feed by [Remotive](https://remotive.com/remote-jobs/api). Listings link directly to the original Remotive page as required by its terms. No LinkedIn data is scraped or downloaded.
+A Streamlit-based resume analysis and job discovery application using Python, NLP, and machine learning techniques.
