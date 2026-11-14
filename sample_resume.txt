@@ -1,0 +1,12 @@
+Jordan Lee
+Junior Data Analyst Candidate
+
+SKILLS
+Python, SQL, Microsoft Excel, pandas, NumPy, Power BI, Git, Streamlit, data cleaning, and data visualization.
+
+PROJECTS
+Retail Sales Analytics: Cleaned datasets with Python and pandas, analyzed orders with SQL, and created Power BI dashboards to explain sales trends.
+Fitness Tracker: Built a Streamlit interface for workout logs and progress charts.
+
+EXPERIENCE
+IT support internship: Investigated computer issues, documented resolutions, and collaborated with colleagues.
