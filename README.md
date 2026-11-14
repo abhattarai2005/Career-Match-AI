@@ -1,4 +1,4 @@
-# CareerMatch AI — Real Job Finder (Version 2)
+# CareerMatch AI — Real Job Finder 
 
 A beginner-friendly portfolio project made with Python, scikit-learn, pandas, and Streamlit.
 
