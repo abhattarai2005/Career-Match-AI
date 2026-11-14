@@ -1,0 +1,170 @@
+/* CareerMatch AI Pro — visual design. Change the colors below to personalize. */
+:root {
+  --navy: #101b43;
+  --ink: #14234b;
+  --muted: #72809e;
+  --violet: #6955ed;
+  --teal: #00a6a6;
+  --line: #e5e9f4;
+  --surface: #ffffff;
+}
+
+/* Page background and general typography */
+[data-testid="stAppViewContainer"] {
+  background:
+    radial-gradient(ellipse at 78% 5%, rgba(217,211,255,.30), transparent 37%),
+    radial-gradient(ellipse at 6% 82%, rgba(196,251,246,.20), transparent 36%),
+    #f7f9fe;
+  color: var(--ink);
+}
+.block-container { max-width: 1280px; padding-top: 2rem; padding-bottom: 4rem; }
+header[data-testid="stHeader"] { background: transparent; }
+#MainMenu, footer { visibility: hidden; }
+[data-testid="stMarkdownContainer"] p { line-height: 1.65; }
+
+/* Streamlit sidebar, light premium style */
+[data-testid="stSidebar"] {
+  background: #111d42;
+  border-right: 1px solid #23335d;
+}
+[data-testid="stSidebar"] *,
+[data-testid="stSidebar"] .stMarkdown,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
+  color: #e8ecff;
+}
+[data-testid="stSidebar"] [data-testid="stCaptionContainer"] { color: #a3b1d8; }
+[data-testid="stSidebar"] hr { border-color: #34416a; }
+[data-testid="stSidebar"] button { color: #ffffff; }
+.cm-sidebar-logo {
+  display:flex; gap:12px; align-items:center; margin: 4px 0 26px;
+}
+.cm-logo-square {
+  width:44px; height:44px; flex-shrink:0; display:grid; place-items:center;
+  border-radius:14px; background:linear-gradient(135deg,#7f66ff,#2ec7c9);
+  color:white; font-size:25px; box-shadow:0 8px 22px rgba(111,88,254,.38);
+}
+.cm-brand { font-size:18px; font-weight:820; letter-spacing:-.6px; color:white; }
+.cm-brand small {display:block; font-size:10px; letter-spacing:1.8px; color:#94a8d9; font-weight:600; margin-top:2px;}
+.cm-sidebar-section {font-size:10px; font-weight:800; letter-spacing:2px; color:#95a7d3; margin:30px 0 12px;}
+.cm-nav-item {display:flex;gap:12px;align-items:center;padding:13px 15px;border-radius:12px;margin-bottom:7px;background:rgba(255,255,255,.05);font-size:13px;color:#e4eafd;}
+.cm-nav-item.active {background:linear-gradient(90deg,rgba(115,93,255,.26),rgba(99,179,233,.10));border:1px solid rgba(176,163,255,.25);}
+.cm-step {display:flex;gap:11px;align-items:flex-start;margin:14px 0; font-size:12px; line-height:1.65;color:#d5dffd;}
+.cm-step-num {display:grid;place-items:center; flex-shrink:0; height:24px;width:24px; border:1px solid #51618e; border-radius:8px; font-weight:800;color:#c6d4ff;}
+.cm-privacy {border:1px solid #35486d;background:#192c51; border-radius:16px; padding:16px; margin-top:26px; font-size:12px;line-height:1.65;color:#ced8f1;}
+.cm-privacy strong {color:#e9fbff;display:block;margin-bottom:5px;}
+
+/* Large branded hero */
+.cm-hero {
+  border-radius:25px;
+  min-height:252px;
+  padding:38px 43px;
+  margin-bottom:26px;
+  color:white;
+  background:linear-gradient(110deg,#131d4b 0%,#38309a 58%,#007e94 100%);
+  overflow:hidden; position:relative; isolation:isolate;
+  box-shadow:0 24px 45px rgba(35,43,116,.14);
+}
+.cm-hero::before {
+  content:""; position:absolute; right:-135px; top:-180px;
+  width:520px;height:520px; border-radius:50%;
+  border:1px solid rgba(255,255,255,.25);
+  box-shadow: 0 0 0 55px rgba(255,255,255,.055),0 0 0 125px rgba(255,255,255,.035);
+  z-index:-1;
+}
+.cm-hero::after {
+  content:"✦"; position:absolute;right:115px;top:75px;font-size:80px;
+  color:#9df3e8;opacity:.42; transform:rotate(-16deg);z-index:-1;
+}
+.cm-hero-kicker {font-size:11px;letter-spacing:2px;font-weight:800;color:#b3fff2;margin-bottom:13px;}
+.cm-hero h1 {font-size:clamp(32px,4vw,46px); line-height:1.10; letter-spacing:-1.8px; color:white !important; font-weight:850;margin:0 0 15px;}
+.cm-hero h1 em {font-style:normal;background:linear-gradient(90deg,#b2fff1,#d7caff);background-clip:text;-webkit-background-clip:text;color:transparent;}
+.cm-hero p {max-width:570px; color:#e3eaff !important;font-size:14px;line-height:1.75;margin:0;}
+.cm-hero-badges {display:flex;flex-wrap:wrap;gap:9px;margin-top:24px;}
+.cm-hero-badges span {background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.23);border-radius:100px;padding:7px 12px;color:#f6f7ff;font-size:11px;font-weight:650;}
+
+/* Section and information blocks */
+.cm-section-top {display:flex;align-items:center;gap:12px;margin:24px 0 4px;}
+.cm-section-icon {height:39px;width:39px;display:grid;place-items:center;border-radius:12px;background:#eae8ff;font-size:21px;}
+.cm-section-title {font-weight:800; font-size:23px;letter-spacing:-.6px;color:#14224b;}
+.cm-section-subtitle {font-size:13px;color:#71809d;margin:3px 0 17px;}
+.cm-eyebrow {color:#7a61e7;font-size:11px;letter-spacing:2px;font-weight:850;margin-bottom:7px;}
+.cm-hint {font-size:12px; color:#7885a1; margin:8px 0 14px;}
+.cm-feature-row {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin: 0 0 26px;}
+.cm-mini-feature {background:#fff;border:1px solid var(--line);border-radius:15px;padding:16px 17px;display:flex;gap:11px;align-items:center;box-shadow:0 8px 28px rgba(27,46,96,.035);}
+.cm-mini-feature .ico {display:grid;place-items:center;flex-shrink:0;width:38px;height:38px;border-radius:11px;background:#f0edff;font-size:18px;}
+.cm-mini-feature b {display:block;font-size:12px;color:#26385c;}
+.cm-mini-feature small {font-size:11px;color:#8b96ab;}
+.cm-info-banner {background:#eef6ff; border:1px solid #dce9fb; border-radius:15px;padding:14px 18px; color:#466487; font-size:12px;line-height:1.65;}
+
+/* Real Streamlit form containers, widgets and tabs */
+[data-testid="stForm"] {
+  background:#fff; padding:24px 25px 22px;
+  border:1px solid #e5eaf5;border-radius:22px;
+  box-shadow:0 10px 34px rgba(26,43,92,.05);
+}
+[data-testid="stFileUploader"] {border-radius:12px;}
+[data-testid="stFileUploaderDropzone"] {background:#f9faff;border:1px dashed #aaa9ec;border-radius:15px;}
+.stTextInput input,.stTextArea textarea,div[data-baseweb="select"] > div {
+  border-radius:12px !important; border-color:#e0e7f2 !important;
+  background:#fafbff !important;
+}
+[data-testid="stTextArea"] textarea:focus, .stTextInput input:focus {box-shadow:0 0 0 2px rgba(110,87,232,.2)!important;}
+.stButton > button[kind="primary"], .stFormSubmitButton > button[kind="primary"] {
+  background:linear-gradient(95deg,#6e55ef,#3a8fe5) !important;
+  border:0 !important; color:white !important;
+  font-weight:750 !important; min-height:48px;
+  border-radius:12px !important; box-shadow:0 8px 22px rgba(103,86,227,.19);
+}
+.stButton > button[kind="primary"]:hover, .stFormSubmitButton > button[kind="primary"]:hover {filter:brightness(1.04);transform:translateY(-1px);}
+.stLinkButton a {border-radius:11px!important; font-weight:700!important;}
+button {transition:all .16s ease;}
+.stTabs [data-baseweb="tab-list"] {gap:15px; border-bottom:1px solid #e0e6f2; margin-bottom:20px;}
+.stTabs [data-baseweb="tab"] {font-size:13px; padding:13px 18px; color:#73809b;font-weight:750;}
+.stTabs [aria-selected="true"] {color:#6554e7 !important; background:#eeebff; border-radius:10px 10px 0 0;}
+.stTabs [data-baseweb="tab-highlight"] {background:#6c58ec;}
+[data-testid="stMetric"] {background:#fff; border:1px solid #e6eaf3; border-radius:15px; padding:18px;}
+[data-testid="stExpander"] {border:1px solid #e4e9f4;border-radius:15px;background:white;}
+[data-testid="stVerticalBlockBorderWrapper"] {border-radius:18px;}
+[data-testid="stDataFrame"] {border-radius:12px;overflow:hidden;}
+
+/* HTML-based stat cards, tags and job summaries */
+.cm-stats {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin:20px 0;}
+.cm-stat {background:#fff;border:1px solid #e7eaf5;border-radius:20px;padding:23px 23px 19px;box-shadow:0 10px 28px rgba(31,50,105,.035);position:relative;overflow:hidden;}
+.cm-stat::before {content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:#8b78f3;}
+.cm-stat.teal::before {background:#27b4ab;}.cm-stat.gold::before {background:#f4bd61;}
+.cm-stat-label {font-size:12px;font-weight:700;color:#7b87a0;letter-spacing:.1px;}
+.cm-stat-number {font-size:38px;letter-spacing:-1.7px;font-weight:830;color:#182651;margin:8px 0 3px;line-height:1.25;}
+.cm-stat-foot {font-size:11px;color:#9ba5b5;}
+.cm-tags {display:flex;flex-wrap:wrap;gap:7px;margin:8px 0 13px;}
+.cm-tag {display:inline-block;font-size:11px;font-weight:690;border-radius:100px;padding:7px 11px;border:1px solid #bde9e1;background:#e8faf7;color:#137b6b;}
+.cm-tag.missing {border-color:#f5dfb8;background:#fffaed;color:#a27622;}
+.cm-tag.neutral {background:#f1f3fc;border-color:#e4e7f4;color:#6c6d9a;}
+.cm-panel-title {font-weight:790;color:#172651;font-size:15px;margin:5px 0 7px;}
+.cm-note {color:#72819e;font-size:12px;line-height:1.7;}
+.cm-score-track {height:10px;border-radius:100px;background:#e9edf8;overflow:hidden;margin:7px 0 15px;}
+.cm-score-track > div {height:100%;border-radius:100px;background:linear-gradient(90deg,#7161fa,#2ac1ba);}
+.cm-divider {height:1px;background:#e9edf5;margin:18px 0;}
+.cm-job-head {display:flex;justify-content:space-between;align-items:flex-start;gap:15px;}
+.cm-job-title {color:#182751;font-weight:800;font-size:17px;line-height:1.35;margin-bottom:4px;}
+.cm-job-company {color:#6f7c97;font-size:12px;line-height:1.8;}
+.cm-job-score {border-radius:12px;background:#edfaf5;color:#137d65;font-size:12px;font-weight:800;padding:9px 12px;white-space:nowrap;}
+.cm-job-detail {font-size:12px;color:#73819b;margin:10px 0;}
+.cm-blank {border:1px dashed #cdd5eb;background:rgba(255,255,255,.6);text-align:center;border-radius:19px;padding:37px 30px;color:#697995;}
+.cm-blank .emoji {font-size:37px;display:block;margin-bottom:10px;}
+.cm-blank strong {display:block;font-size:16px;color:#21345a;margin-bottom:6px;}
+.cm-blank small {font-size:12px;}
+.cm-footer {text-align:center;color:#96a0b4;font-size:11px;padding-top:24px;}
+.cm-label {font-size:11px;font-weight:800;letter-spacing:1.5px;color:#7564ea;margin-top:15px;}
+.cm-summary-box {padding:20px;background:#fff;border:1px solid #e6ebf5;border-radius:17px;margin:11px 0;}
+.cm-summary-box h4 {margin:0 0 8px;color:#172652;font-size:14px;}
+.cm-summary-box p {font-size:12px;color:#70819b;margin:0;}
+
+@media (max-width:760px) {
+  .block-container {padding-top:1rem;}
+  .cm-hero {padding:27px 23px;min-height:205px;}
+  .cm-hero::after {display:none;}
+  .cm-feature-row,.cm-stats {grid-template-columns:1fr;}
+  .cm-hero h1 {font-size:30px;}
+  .cm-hero p {font-size:12px;}
+  [data-testid="stForm"] {padding:15px;}
+}
